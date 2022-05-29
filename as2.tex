@@ -1,0 +1,49 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[utf8]{inputenc}
+ 
+\usepackage{tfrupee}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\begin{document}
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
+\let\vec\mathbf
+
+
+\title{Assignment 2}
+\author{\textbf{Pathlavath Shankar (CS21BTECH11064)}}
+\maketitle
+\date {March 2022}
+
+
+\textbf{\textit{Problem 1(viii), ICSE 12 2019:}}
+
+Using L’Hospital’s Rule, evaluate:
+
+ $\lim_{x\to\pi/2}$ ${xtanx- \pi/2secx}$
+
+\textbf{\textit{Solution:}}
+
+we know that,
+
+if there is a function $f(x)=\frac{g(x)}{h(x)}$
+
+then by L’Hospital’s Rule 
+\begin{align}
+\lim_{x\to x_0} f(x)&=\lim_{x\to x_0} \frac{g(x)}{h(x)}  \\
+\label{eq:2}
+&=\lim_{x\to x_0} \frac{g'(x)}{h'(x)}
+\end{align}
+so,by equation \eqref{eq:2},
+\begin{align}
+\lim_{x\to\pi/2} {xtanx- \pi/2secx}&=\lim_{x\to\pi/2}
+ {\frac{\mathrm{d}(2xsinx-\pi)}{\mathrm{d}x}\frac{\mathrm{d}x}{\mathrm{d}(2cosx)}} \\
+&=\lim_{x\to\pi/2}\frac{2xcosx + 2sinx}{-2sinx}
+\end{align}
+Now,putting value of x=$\pi/2$,we get  {-1}       \\
+
+\end{document}
